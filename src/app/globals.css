@@ -25,7 +25,7 @@ html {
   --font-sans: var(--font-geist-sans);
   --font-primary: var(--font-primary);
   --font-secondary: var(--font-secondary);
-  --font-primary-bold: var(--font-primary-bold);
+  --font-primary-regular: var(--font-primary-regular);
   --font-mono: var(--font-geist-mono);
 }
 

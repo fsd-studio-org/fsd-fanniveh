@@ -1,5 +1,5 @@
 import Footer from "@/components/layout/Footer";
-import Nav from "@/components/template/sections/nav/Nav";
+import Nav from "@/components/layout/nav/Nav";
 import { ReactNode } from "react";
 
 export default function Layout({ 
@@ -8,12 +8,12 @@ export default function Layout({
   children: ReactNode 
 }) {
   return (
-    <div>
+    <>
       <Nav />
 
       {children}
 
       <Footer />
-    </div>
+    </>
   );
 }

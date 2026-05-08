@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Oswald } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import './globals.css';
 
@@ -12,15 +12,14 @@ const geistMono = Geist_Mono({
     subsets: ['latin'],
 });
 
-const fontPrimary = Oswald({
+const fontPrimary = localFont({
+    src: '../fonts/ClashDisplay-Medium.otf',
     variable: '--font-primary',
-    subsets: ['latin'],
 });
 
-const fontPrimaryBold = localFont({
-    src: '../fonts/Bigilla-Bold.otf',
-    variable: '--font-primary-bold',
-    display: 'swap',
+const fontPrimaryRegular = localFont({
+    src: '../fonts/ClashDisplay-Regular.otf',
+    variable: '--font-primary-regular',
 });
 
 const fontSecondary = localFont({
@@ -36,7 +35,7 @@ export default function RootLayout({
 }) {
 
     return (
-        <html lang="hu" className={`${geistSans.variable} ${fontSecondary.variable} ${geistMono.variable} ${fontPrimary.variable} ${fontPrimaryBold.variable}`}>
+        <html lang="hu" className={`${geistSans.variable} ${fontSecondary.variable} ${geistMono.variable} ${fontPrimary.variable} ${fontPrimaryRegular.variable}`}>
             <body>
                 {children}
             </body>

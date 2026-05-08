@@ -5,6 +5,7 @@ function FSDImage({
   alt = 'image',
   quality = 75,
   style = '',
+  className = "",
 
   // priority for images in LCP
   priority = false,
@@ -19,6 +20,7 @@ function FSDImage({
           objectFit: 'cover',
         }
       }
+      className={className}
       src={src}
       alt={alt}
       priority={priority}

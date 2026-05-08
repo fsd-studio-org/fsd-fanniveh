@@ -1,5 +1,5 @@
 import TimetableRow from '@/app/components/TimeTableRow';
-import Layout from '@/components/template/layouts/Layout';
+import Layout from '@/components/layout/Layout';
 import FSDImage from '@/components/template/ui/FSDImage';
 import LinkWrapper from '@/components/template/ui/LinkWrapper';
 import Section from '@/components/template/ui/Section';
@@ -23,24 +23,29 @@ const timetable = {
 function page() {
   return (
     <Layout>
-      <Section innerClassName='h-svh' outerClassName='!h-screen !py-0 bg-[linear-gradient(71deg,rgba(255,255,255,1)_0%,rgba(218,252,237,1)_100%)]'>
-        <div className='mx-auto max-w-[380px] md:max-w-[500px] lg:max-w-max relative flex gap-4 lg:gap-18 mt-8 md:mt-14 justify-center flex-col lg:flex-row h-full lg:justify-between'>
-          <div className='lg:w-full md:mt-4 lg:my-auto md:order-2 lg:order-0 flex flex-col gap-6'>
-            <div className='flex flex-col gap-3 lg:gap-6'>
-              <Title className='lg:text-4xl'>Foglaljon időpontot:</Title>
-              <ul className='lg:text-xl'>
-                <li><LinkWrapper link={"tel:+3688444644"}> +3688444644</LinkWrapper>, <LinkWrapper link={"tel:+36309463145"}>+36309463145</LinkWrapper></li>
-                <li><LinkWrapper link={"mailto:info@promedicum.hu"}>info@promedicum.hu</LinkWrapper></li>
-                <li><LinkWrapper link={"https://promedicum.hu/idopontfoglalas"}>időpontfoglalás</LinkWrapper></li>
-              </ul>
-            </div>
-
-            <div className='p-2 px-4 text-2xl border border-green-900  w-full md:w-fit text-center rounded-xl'>
-              <p><span className='font-bold'>H</span>: 10-16 <span className='font-bold'>K, P</span>: 8-14 <span className='font-bold'>Sz</span>: 14-19</p>
-            </div>
+      <Section innerClassName='h-svh' outerClassName='!h-screen !py-0 bg-orange-50'>
+        <div className='flex mt-88 gap-20 justify-content-between'>
+          <div className='w-[75%] h-70 bg-orange-700 relative rounded-t-[800px] rounded-[100px]'>
+            <FSDImage className='rotate-y-180 absolute bottom-0 w-[70%] left-14' src='/images/Fanni-hero copy.png'></FSDImage>
           </div>
 
-          <FSDImage src='/images/Krisztina-hero.png' alt='Fogászat' className="mx-auto md:order-0 md:h-[50%] lg:w-[50%] xl:h-[70%] lg:my-auto rounded-2xl"></FSDImage>
+          <div className='w-[75%] ms-0 -mt-30'>
+            <h1 className='text-7xl mb-6 font-primary-regular'>
+              <span className='-ms-20 block'>Machine</span><span className='italic'>Learning</span>
+            </h1>
+            <p className='f leading-7.5'>I am an Applied Computer Science student at BFH in Switzerland, specializing in <span className='p-1 px-2 text-[#7450c2] font-black h-fit bg-purple-100 rounded-xl'>AI and Data Science</span>. While my core focus is building intelligent systems using Python and TensorFlow , my background running a web development agency, FSD Studio, gives me a unique edge. I don't just train models—I understand <span className='p-1 px-2 text-[#4c8eb1] font-black h-fit bg-cyan-100 rounded-xl'>full-stack deployment</span>, business logic, and how to turn analytical groundwork into practical, user-facing solutions.</p>
+            {/* <div className='flex gap-2'>
+              <div className='p-4 h-fit bg-[#B490FF] rounded-4xl'>
+                <p className='text-3xl font-primary'>Data Science</p>
+              </div>
+              <div className='p-4 h-fit bg-[#62BDEF] rounded-4xl'>
+                <p className='text-3xl font-primary'>Data Science</p>
+              </div>
+              <div className='p-4 h-fit bg-[#D1F878] rounded-4xl'>
+                <p className='text-3xl font-primary'>Data Science</p>
+              </div>  
+            </div> */}
+          </div>
         </div>
       </Section>
 
