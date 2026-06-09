@@ -22,7 +22,7 @@ export default function Text() {
                 <span className='md:-ms-20 w-fit md:block'>AI <span className="md:text-4xl lg:text-5xl">with</span></span> <span className='italic border-b md:border-0'>Passion</span>
             </h1>
             <div className="w-fit" ref={bodyRef}>
-                <p className='sm:text-justify leading-8.5 w-fit'>With my background in <Highlight>AI and Data Science</Highlight>, I try to bring <Highlight variant="blue">passion, knowledge, and joy</Highlight>, to build a better tomorrow.</p>
+                <p className='sm:text-justify leading-8.5 w-fit'>With my background in <Highlight>AI and Data Science</Highlight>, I try to bring <Highlight variant="blue">passion, knowledge, and joy</Highlight> to build a better tomorrow.</p>
 
                 <a href="#Work">
                     <Button className="mt-4">Check my work</Button>

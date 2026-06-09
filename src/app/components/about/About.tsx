@@ -21,7 +21,7 @@ export default function About() {
                 <a href="mailto:veh.fanni29@gmail.com">
                     <AiOutlineMail className='text-3xl text-primary'/>
                 </a>
-                <a href="whatsapp:+36205423745">
+                <a href="https://wa.me/06205423745">
                     <FaWhatsapp className='text-3xl text-primary'/>
                 </a>
             </div>
