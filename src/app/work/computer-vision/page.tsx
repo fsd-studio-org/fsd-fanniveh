@@ -13,7 +13,7 @@ const sections = [
   },
   {
     heading: "My Part",
-    content: "By this time, I was comfortable taking the leadership position in school projects. My team consisted of 3 people including me, and the other 2 members were quite passive, so it was a challenge to engage them and make sure that we delivered quality results. I did most of the coding, as I had the most experience with training AI models.",
+    content: "By this time, I was comfortable taking the leadership position in school projects, and I pushed my more passive teammates to deliver quality results. I did most of the coding, as I had the most experience with training AI models.",
   },
   {
     heading: "Improvements",
@@ -23,7 +23,7 @@ const sections = [
 
 const documents = [
   {
-    href: "/Computer_Vision_Presentation.pdf",
+    href: "/Computer_Vision_Presentation_compressed.pdf",
     type: "down",
     content: "Presentation"
   },

@@ -23,7 +23,7 @@ const sections = [
 
 const documents = [
   {
-    href: "/Robotics_Presentation.pdf",
+    href: "/Robotics_Presentation-compressed.pdf",
     type: "down",
     content: "Presentation"
   },
