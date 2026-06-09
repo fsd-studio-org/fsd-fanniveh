@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import './globals.css';
+import Layout from "@/components/layout/Layout";
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -23,7 +24,7 @@ const fontPrimaryRegular = localFont({
 });
 
 const fontSecondary = localFont({
-    src: '../fonts/NMB.otf',
+    src: '../fonts/Orbitron Bold.otf',
     variable: '--font-secondary',
     display: 'swap',
 });
@@ -37,7 +38,9 @@ export default function RootLayout({
     return (
         <html lang="hu" className={`${geistSans.variable} ${fontSecondary.variable} ${geistMono.variable} ${fontPrimary.variable} ${fontPrimaryRegular.variable}`}>
             <body>
-                {children}
+                <Layout>
+                    {children}
+                </Layout>
             </body>
         </html>
     )

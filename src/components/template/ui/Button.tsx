@@ -20,11 +20,11 @@ const Button = ({
   className: string
 }) => {
   // Base styles that apply to all buttons
-  const baseStyles = 'font-medium rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed'
+  const baseStyles = 'font-medium cursor-pointer rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed'
   
   // Solid variant styles
   const variants = {
-    "primary": 'bg-primary hover:bg-primary/90 text-white focus:ring-primary',
+    "primary": 'bg-primary border hover:bg-secondary hover:text-primary border-primary text-white focus:ring-primary',
     "secondary": 'bg-secondary hover:bg-secondary/90 text-black focus:ring-secondary',
     "danger": 'bg-red-600 hover:bg-red-700 text-white focus:ring-red-500'
   }

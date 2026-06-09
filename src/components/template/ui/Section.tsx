@@ -14,7 +14,7 @@ function Section({
     innerClassName = "",
   }: SectionProps) {
   return (
-    <section id={id} className={`${outerClassName} py-10 md:py-18 px-6 md:px-10 overflow-hidden`.trim()}>
+    <section id={id} className={`${outerClassName} py-10 md:py-18 px-4 md:px-10 overflow-hidden`.trim()}>
       <div className={`${innerClassName} lg:max-w-[1160px] mx-auto`.trim()}>
           {children}
       </div>

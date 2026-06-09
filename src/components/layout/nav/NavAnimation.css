@@ -1,25 +1,27 @@
 .nav-animation-container {
-  --brand-color: #b53815; 
+  --brand-color: #b53815;
   --globe-size: 70px;
   --orbit-size: 110px;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px; 
+  height: 120px;
 }
 
 .scene {
   width: var(--orbit-size);
   height: var(--orbit-size);
-  perspective: 800px; 
+  perspective: 800px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.globe, .orbit, .plane-wrapper {
+.globe,
+.orbit,
+.plane-wrapper {
   position: absolute;
   transform-style: preserve-3d;
 }
@@ -32,10 +34,12 @@
 
 .ring {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  border: 1px solid rgba(181, 56, 21, 0.4); 
+  border: 1px solid rgba(181, 56, 21, 0.4);
 }
 
 .meridian {
@@ -55,7 +59,8 @@
 .plane-wrapper {
   position: absolute;
   transform-style: preserve-3d;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   animation: orbitPlane 4s linear infinite;
 }
 
@@ -67,15 +72,13 @@
 
   top: -10px;
   left: -10px;
-  
+
   /* 1. translateZ: Pushes the plane out to the edge of the orbit.
     2. rotateX: Pits the plane down 90 degrees so it lies flat (belly facing "down").
     3. rotateZ: Yaws the plane 90 degrees so the nose points forward along the path.
   */
-  transform: 
-    translateZ(calc(var(--orbit-size) / 2)) 
-    rotateX(180deg) 
-    rotateZ(90deg); 
+  transform:
+    translateZ(calc(var(--orbit-size) / 2)) rotateX(180deg) rotateZ(90deg);
 }
 
 .plane svg {
@@ -85,11 +88,21 @@
 }
 
 @keyframes spinGlobe {
-  from { transform: rotateY(0deg) rotateX(15deg); }
-  to { transform: rotateY(360deg) rotateX(15deg); }
+  from {
+    transform: rotateY(0deg) rotateX(15deg);
+  }
+
+  to {
+    transform: rotateY(360deg) rotateX(15deg);
+  }
 }
 
 @keyframes orbitPlane {
-  from { transform: rotateY(0deg); }
-  to { transform: rotateY(360deg); }
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
 }

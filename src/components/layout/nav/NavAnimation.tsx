@@ -19,7 +19,7 @@ const NavAnimation: React.FC = () => {
           ))}
           <div className="ring equator" />
         </div>
-        
+
         {/* The Plane and its Orbit */}
         <div className="orbit">
           <div className="plane-wrapper">

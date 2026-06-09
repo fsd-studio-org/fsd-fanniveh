@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/Footer";
+import Footer from "@/components/layout/footer/Footer";
 import Nav from "@/components/layout/nav/Nav";
 import { ReactNode } from "react";
 
