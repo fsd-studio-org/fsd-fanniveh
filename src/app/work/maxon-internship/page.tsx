@@ -43,6 +43,7 @@ export default function Page() {
   return (
     <Hero
       title="Maxon Motor Internship"
+      src="/images/Maxon-Motors-Internship2.png"
       skills={MAXON_INTERNSHIP}
       sections={sections}
       documentHrefList={documents}

@@ -9,7 +9,7 @@ export const metadata = {
 const sections = [
   {
     heading: "Project Overview",
-    content: "During this project we were comparing two different motor movement methodologies while sorting coloured berries into the corresponding boxes. As an addition, we also tried the sorting task while having an obstacle in the way of our robot.",
+    content: "During this project two robot arm control strategies were implemented and compared in simulation: Resolved Rate Motion Control, which uses the Jacobian matrix to follow smooth Cartesian paths in real time, and Joint Space Trajectory Interpolation, which plans trajectories by interpolating between joint angles using 5th-order polynomials. The two methods were evaluated across execution time, path accuracy, and path efficiency over 100 simulated sorting runs, with obstacle avoidance additionally implemented for the Resolved Rate approach using a potential field method.",
   },
   {
     heading: "My Part",
@@ -17,7 +17,7 @@ const sections = [
   },
   {
     heading: "Improvements",
-    content: "I improved my mathematical skills a lot, as well as my communication skills. The biggest challenge was that our team leader was sometimes quite forceful with his ideas and I had to push back and make sure that we let others have a voice as well.",
+    content: "The project was not only challenging technically as I had to learn some mathematics, but another big challenge was that our team leader was sometimes quite forceful with his ideas and I had to push back and make sure that we let others have a voice as well.",
   },
 ];
 
@@ -38,6 +38,7 @@ export default function Page() {
   return (
     <Hero
       title="Robot Control Applications"
+      src="/images/Robotics.png"
       skills={ROBOT_CONTROL}
       sections={sections}
       documentHrefList={documents}

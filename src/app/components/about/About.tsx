@@ -37,6 +37,10 @@ export default function About() {
 
                     </p>
                     <p>
+                        Alongside my technical background, I bring strong communication and leadership skills developed across team projects, client work, and an international work environment. 
+                        I enjoy taking initiative, am comfortable working autonomously, and have a track record of stepping up in leadership roles when needed.
+                    </p>
+                    <p>
                         However, I don’t only like sitting in front of a computer. In my free
                         time I love curling up with a good book or practising my musical
                         skills.

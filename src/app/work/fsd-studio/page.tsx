@@ -9,7 +9,7 @@ export const metadata = {
 const sections = [
   {
     heading: "Project Overview",
-    content: "FSD Studio is a web design agency established by my partner and me. As an English student, I had been struggling to find a job related to our field. After taking a class about digital startups and hearing from people that they were in need of assistance, we came up with the idea to follow our entrepreneurial dreams and create our own workplace.",
+    content: "FSD Studio is a web design agency established by my partner and me. As an international student in Belgium, I had been struggling to find a job related to our field. After taking a class about digital startups and hearing from people that they were in need of assistance, we came up with the idea to follow our entrepreneurial dreams and create our own workplace.",
   },
   {
     heading: "My Part",

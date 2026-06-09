@@ -33,6 +33,7 @@ export default function Page() {
   return (
     <Hero
       title="Computer Vision"
+      src="/images/Computer-Vision.png"
       skills={COMPUTER_VISION}
       sections={sections}
       documentHrefList={documents}

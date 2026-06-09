@@ -33,6 +33,7 @@ export default function Page() {
   return (
     <Hero
       title="Skills Integration Lab 2"
+      src="/images/SKILL-2-2.png"
       skills={SKILL_2_2}
       sections={sections}
       documentHrefList={documents}
