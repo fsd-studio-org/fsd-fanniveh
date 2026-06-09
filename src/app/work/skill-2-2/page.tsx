@@ -21,12 +21,21 @@ const sections = [
   },
 ];
 
+const documents = [
+  {
+    href: "/ExchangePortal_User_Guide.pdf",
+    type: "down",
+    content: "User Guide"
+  },
+]
+
 export default function Page() {
   return (
     <Hero
       title="Skills Integration Lab 2"
       skills={SKILL_2_2}
       sections={sections}
+      documentHrefList={documents}
     />
   );
 }

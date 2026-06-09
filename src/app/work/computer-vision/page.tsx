@@ -21,12 +21,21 @@ const sections = [
   },
 ];
 
+const documents = [
+  {
+    href: "/Computer_Vision_Presentation.pdf",
+    type: "down",
+    content: "Presentation"
+  },
+]
+
 export default function Page() {
   return (
     <Hero
       title="Computer Vision"
       skills={COMPUTER_VISION}
       sections={sections}
+      documentHrefList={documents}
     />
   );
 }
