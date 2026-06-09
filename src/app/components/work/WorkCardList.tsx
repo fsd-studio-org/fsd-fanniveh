@@ -68,7 +68,7 @@ export default function WorkCardList() {
                 </div>
 
                 <WorkCard src='/images/SKILL-2-1.png' className='shrink-0 work-card work-card-3' title='SKIL2 — Session Coordination' href='/work/skill-2-1' skills={SKILL_2_1} />
-                <WorkCard src='/images/SKILL-2-2.png' className='shrink-0 work-card work-card-4' title='SKIL2 — ' href='/work/skill-2-2' skills={SKILL_2_2} />
+                <WorkCard src='/images/SKILL-2-2.png' className='shrink-0 work-card work-card-4' title='SKIL2 — Student Platform' href='/work/skill-2-2' skills={SKILL_2_2} />
             </div>
             <div className='w-[70%] mt-3 hidden xl:hidden mb-8 lg:block space-y-2 col-span-2'>
                 <SubTitle>Thomas More - Belgium</SubTitle>

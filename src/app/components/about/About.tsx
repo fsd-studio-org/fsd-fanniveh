@@ -5,11 +5,26 @@ import { HighlightSmall } from '@/components/ui/Highlight';
 import { Title } from '@/components/ui/Title';
 import Cards from './Cards';
 import { CVButton } from '@/components/layout/nav/CVButton';
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function About() {
     return (
         <Section id='About' innerClassName='max-w-120 mx-auto' outerClassName='bg-secondary'>
-            <Title className='mb-3 lg:mb-6'>About me</Title>
+            <Title className='mb-3 lg:mb-2'>About me</Title>
+
+            <div className='flex gap-4 lg:mb-6'>
+                <a href="https://www.linkedin.com/in/fanni-v%C3%A9h/">
+                    <AiOutlineLinkedin className='text-3xl text-primary'/>
+                </a>
+                <a href="mailto:veh.fanni29@gmail.com">
+                    <AiOutlineMail className='text-3xl text-primary'/>
+                </a>
+                <a href="whatsapp:+36205423745">
+                    <FaWhatsapp className='text-3xl text-primary'/>
+                </a>
+            </div>
 
             <div className='text-justify justify-between flex lg:flex-row flex-col gap-12'>
                 <div className='flex gap-5 flex-col lg:w-[80%]'>
