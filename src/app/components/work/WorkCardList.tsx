@@ -53,12 +53,12 @@ export default function WorkCardList() {
 
                 <div className='lg:hidden xl:block lg:ms-12 mb-8 block space-y-2 md:my-auto col-span-2'>
                     <SubTitle>Internship & Work Experience</SubTitle>
-                    <p className='mt-1 font-primary-regular  max-w-120 lg:max-w-max'>While still in school, I wanted to get some real experience alongside my studies. That led to two things: starting a small design studio with my partner and doing an internship at maxon motor in Switzerland, where I got to see how a larger international company operates.</p>
+                    <p className='mt-1 font-primary-regular  max-w-120 lg:max-w-max'>While still in school, I wanted to get some real experience alongside my studies. That led to two things: starting a small design studio with my partner and doing an internship at Maxon Motor in Switzerland, where I got to see how a larger international company operates.</p>
                 </div>
             </div>
             <div className='w-[70%] mt-3 hidden xl:hidden mb-8 lg:block space-y-2 col-span-2'>
                 <SubTitle>Internship & Work Experience</SubTitle>
-                <p className='mt-1 font-primary-regular  max-w-120 lg:max-w-max'>While still in school, I wanted to get some real experience alongside my studies. That led to two things: starting a small design studio with my partner and doing an internship at maxon motor in Switzerland, where I got to see how a larger international company operates.</p>
+                <p className='mt-1 font-primary-regular  max-w-120 lg:max-w-max'>While still in school, I wanted to get some real experience alongside my studies. That led to two things: starting a small design studio with my partner and doing an internship at Maxon Motor in Switzerland, where I got to see how a larger international company operates.</p>
             </div>
 
             <div id='work-card-list-2' className='flex lg:flex-row  max-w-120 lg:max-w-max flex-col gap-3'>

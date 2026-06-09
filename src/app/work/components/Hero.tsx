@@ -68,7 +68,7 @@ export default function Hero({ title, src, skills = [], sections, documentHrefLi
                 <div className='relative mt-30 text-secondary p-4 text-justify flex justify-center'>
                     <div>
                         {src && (
-                            <FSDImage ref={imageRef} className='-mt-30 lg:-mt-60 mx-auto w-[90%] md:w-full max-w-100 border-b-3 rounded-xl' src={src} />
+                            <FSDImage ref={imageRef} className='-mt-30 lg:-mt-50 mx-auto w-[90%] md:w-full max-w-100 border-b-3 rounded-xl' src={src} />
                         )}
 
                         <div className='my-8 max-w-100'>
