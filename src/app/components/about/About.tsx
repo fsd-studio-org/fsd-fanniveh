@@ -8,7 +8,7 @@ import { CVButton } from '@/components/layout/nav/CVButton';
 
 export default function About() {
     return (
-        <Section id='About' outerClassName='bg-secondary'>
+        <Section id='About' innerClassName='max-w-120 mx-auto' outerClassName='bg-secondary'>
             <Title className='mb-3 lg:mb-6'>About me</Title>
 
             <div className='text-justify justify-between flex lg:flex-row flex-col gap-12'>

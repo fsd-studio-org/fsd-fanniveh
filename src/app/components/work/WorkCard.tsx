@@ -27,6 +27,7 @@ export default function WorkCard({ title, className = "", href, src = "/template
     const arrowRef = useRef<HTMLDivElement>(null);
     const titleRef = useRef<HTMLHeadingElement>(null);
     const timelineRef = useRef<gsap.core.Timeline | null>(null);
+    const delayedReverseRef = useRef<gsap.core.Tween | null>(null);
 
     useGSAP(() => {
         const mm = gsap.matchMedia();
@@ -72,19 +73,25 @@ export default function WorkCard({ title, className = "", href, src = "/template
 
         mm.add("(min-width:768px)", () => {
             const handleMouseEnter = () => {
+                if (delayedReverseRef.current) {
+                    delayedReverseRef.current.kill();
+                    delayedReverseRef.current = null;
+                }
                 if (timelineRef.current) {
                     timelineRef.current.play();
                 } else {
-                    const tl = gsap.timeline()
-                    
+                    const tl = gsap.timeline();
                     tlFn(tl);
                 }
             };
 
             const handleMouseLeave = () => {
                 if (timelineRef.current) {
-                    timelineRef.current.delay(0.6)
-                    timelineRef.current.reverse();
+                    const tl = timelineRef.current;
+                    delayedReverseRef.current = gsap.delayedCall(0.3, () => {
+                        tl.reverse();
+                        delayedReverseRef.current = null;
+                    });
                 }
             };
 

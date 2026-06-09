@@ -72,15 +72,24 @@ export default function Nav({
             {children}
 
             <div className='hidden lg:flex items-center gap-6'>
-              {links.map((title, index) => (
-                <a
+              {links.map(({ label, href }, index) => (
+                <motion.a
                   key={index}
-                  /* Toggle nav link font size */
-                  className={`font-primary-regular pointer-events-auto text-black hover:border-b-2 font-light transition-all duration-500 ease-in-out ${isScrolled ? 'text-2xl' : 'text-3xl'}`}
-                  href={`/#${title}`}
+                  className={`relative font-primary-regular pointer-events-auto text-black font-light transition-all duration-500 ease-in-out ${isScrolled ? 'text-2xl' : 'text-3xl'}`}
+                  href={href}
+                  initial="rest"
+                  whileHover="hover"
+                  animate="rest"
                 >
-                  {title}
-                </a>
+                  {label}
+                  <motion.span
+                    className="absolute bottom-0 left-0 h-0.5 bg-current w-full block"
+                    variants={{
+                      rest: { scaleX: 0, originX: 0 },
+                      hover: { scaleX: 1, originX: 0, transition: { duration: 0.25, ease: "easeOut" } },
+                    }}
+                  />
+                </motion.a>
               ))}
               <div className={`transition-all ms-8 duration-500 ease-in-out ${isScrolled ? 'scale-85' : ''}`}>
                 <CVButton/>
@@ -115,18 +124,15 @@ export default function Nav({
         }}
         className={`lg:hidden bg-primary origin-top fixed z-40 top-0 left-0 h-screen w-full overflow-hidden`}>
         <div className='flex flex-col justify-center items-center h-full'>
-          {links.map((title, index) => (
+          {links.map(({ label, href }, index) => (
             <div key={index} className='overflow-hidden'>
-              <motion.a variants={{
-                open: {
-                  y: 0,
-                },
-                closed: {
-                  y: 50,
-                }
-              }}
-
-                className='text-secondary text-5xl text-center w-full block mt-6 font-primary-regular' href={`/#${title}`}>{title}</motion.a>
+              <motion.a
+                variants={{ open: { y: 0 }, closed: { y: 50 } }}
+                className='text-secondary text-5xl text-center w-full block mt-6 font-primary-regular'
+                href={href}
+              >
+                {label}
+              </motion.a>
             </div>
           ))}
         </div>
