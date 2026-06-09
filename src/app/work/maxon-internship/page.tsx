@@ -21,12 +21,31 @@ const sections = [
   },
 ];
 
+const documents =  [
+  {
+    href: "/Reflection-FanniVeh.pdf",
+    type: "down",
+    content: "Reflection"
+  },
+  {
+    href: "/Project_Plan-FanniVeh.pdf",
+    type: "down",
+    content: "Project Plan"
+  },
+  {
+    href: "/Realization_Document-FanniVeh.pdf",
+    type: "down",
+    content: "Realization Document"
+  },
+]
+
 export default function Page() {
   return (
     <Hero
       title="Maxon Motor Internship"
       skills={MAXON_INTERNSHIP}
       sections={sections}
+      documentHrefList={documents}
     />
   );
 }

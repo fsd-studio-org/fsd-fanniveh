@@ -21,12 +21,26 @@ const sections = [
   },
 ];
 
+const documents = [
+  {
+    href: "/Robotics_Presentation.pdf",
+    type: "down",
+    content: "Presentation"
+  },
+  {
+    href: "/main.html",
+    type: "down",
+    content: "Notebook"
+  }
+]
+
 export default function Page() {
   return (
     <Hero
       title="Robot Control Applications"
       skills={ROBOT_CONTROL}
       sections={sections}
+      documentHrefList={documents}
     />
   );
 }

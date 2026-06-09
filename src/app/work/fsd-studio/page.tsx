@@ -21,6 +21,12 @@ const sections = [
   },
 ];
 
+const documents = [{
+  href: "https://www.fsd-studio.com/",
+  type: "link",
+  content: "Visit our website!"
+}]
+
 export default function Page() {
   return (
     <Hero
@@ -28,6 +34,7 @@ export default function Page() {
       src="/images/work-card-fsd.png"
       skills={FSD_STUDIO}
       sections={sections}
+      documentHrefList={documents}
     />
   );
 }

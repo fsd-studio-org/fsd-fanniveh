@@ -6,8 +6,8 @@ import Work from '@/app/components/work/Work';
 // https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadata-object
 
 export const metadata = {
-  title: 'Dr Somogyi Krisztina',
-  description: 'Veszprémi fogorvos 1995 óta, konzerváló kezelésekkel, fogpótlásokkal és gyermekfogászattal.',
+  title: 'Fanni Veh',
+  description: 'Hungarian IT Specialist with a passion for AI.',
 };
 
 function page() {

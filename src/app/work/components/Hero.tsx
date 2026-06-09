@@ -8,10 +8,18 @@ import { Title } from '@/components/ui/Title';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { useRef } from 'react';
+import { GoDownload } from "react-icons/go";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 type HeroSection = {
-    heading?: string;
-    content: string;
+    heading?: string,
+    content: string
+}
+
+type HeroDocument = {
+    href: string,
+    type: string,
+    content: string
 }
 
 type WorkHeroProps = {
@@ -19,10 +27,10 @@ type WorkHeroProps = {
     src?: string;
     skills?: string[];
     sections: HeroSection[];
-    documentHref?: string;
+    documentHrefList?: HeroDocument[];
 }
 
-export default function Hero({ title, src, skills = [], sections, documentHref }: WorkHeroProps) {
+export default function Hero({ title, src, skills = [], sections, documentHrefList }: WorkHeroProps) {
     const imageRef = useRef(null)
     const domeRef = useRef(null)
 
@@ -89,11 +97,24 @@ export default function Hero({ title, src, skills = [], sections, documentHref }
                                         </div>
                                     </div>
                                 )}
+                            {documentHrefList && (
+                                <div className='lg:absolute -left-58 z-10 top-0 lg:block'>
+                                    <div className='lg:mt-0 space-y-2 flex flex-col lg:w-50'>
+                                        {documentHrefList?.map((document, index) =>
+                                        <div className='w-full' key={index}>
+                                            <a target="_blank" className='w-fit flex justify-self-end' href={document.href}>
+                                                <Button variant='secondary' className='bodyElement my-0 flex items-center gap-2'>
+                                                    <span className='text-nowrap'>{document.content}</span>
+                                                    {document.type == "down" ? <GoDownload  className='w-5 h-auto'/> : <FaExternalLinkAlt />}
+                                                </Button>
+                                            </a>
+                                        </div>
+                                        )}
+                                    </div>
+                                </div>
+                            )}
                             </div>
 
-                            {documentHref && (
-                                <Button variant='secondary' className='bodyElement mt-3'>Download Document</Button>
-                            )}
                         </div>
                     </div>
                 </div>

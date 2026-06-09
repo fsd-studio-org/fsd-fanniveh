@@ -22,12 +22,21 @@ const sections = [
   },
 ];
 
+const documents = [
+  {
+    href: "/SMO-A_Analysis_and_design_report.pdf",
+    type: "down",
+    content: "Report"
+  },
+]
+
 export default function Page() {
   return (
     <Hero
       title="SKIL2 — Session Coordination"
       skills={skills}
       sections={sections}
+      documentHrefList={documents}
     />
   );
 }

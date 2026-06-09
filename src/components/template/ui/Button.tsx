@@ -25,7 +25,7 @@ const Button = ({
   // Solid variant styles
   const variants = {
     "primary": 'bg-primary border hover:bg-secondary hover:text-primary border-primary text-white focus:ring-primary',
-    "secondary": 'bg-secondary hover:bg-secondary/90 text-black focus:ring-secondary',
+    "secondary": 'bg-secondary hover:bg-transparent hover:text-secondary border-secondary border text-black focus:ring-secondary',
     "danger": 'bg-red-600 hover:bg-red-700 text-white focus:ring-red-500'
   }
   
