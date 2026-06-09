@@ -29,7 +29,7 @@ const documents = [
   },
   {
     href: "/main.html",
-    type: "down",
+    type: "link",
     content: "Notebook"
   }
 ]

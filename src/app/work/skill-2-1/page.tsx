@@ -33,7 +33,7 @@ const documents = [
 export default function Page() {
   return (
     <Hero
-      title="SKIL2 — Session Coordination"
+      title="Skills Integration Lab 2"
       skills={skills}
       sections={sections}
       documentHrefList={documents}
