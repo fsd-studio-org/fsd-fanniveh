@@ -88,7 +88,7 @@ export const CVButton = () => {
     }, []);
 
     return (
-        <a target="_blank" href="Fanni-Véh_CV-EN.pdf">
+        <a target="_blank" href="Fanni-Véh_CV.pdf">
             <button
                 ref={buttonRef}
                 className="relative bg-primary pointer-events-auto cursor-pointer text-white px-5 py-3 flex items-center gap-3 rounded-full overflow-hidden"
